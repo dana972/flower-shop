@@ -37,7 +37,7 @@
         <div class="container-fluid header-top sticky-top">
             <div class="container d-flex align-items-center">
                 <div class="d-flex align-items-center h-100">
-                    <a href="#" class="navbar-brand" style="height: 125px;">
+                    <a href="#" class="navbar-brand" style="height: 125px;margin-left:0px">
                         <h1 class=" mb-0"><i class="fas fa-leaf"></i> Flora</h1>
                         <!-- <img src="img/logo.png" alt="Logo"> -->
                     </a>
@@ -78,7 +78,7 @@
                     <div class="nav-bar px-0 py-lg-0" style="height: 80px;">
                         <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-lg-end">
                             <a href="#" class="navbar-brand-2">
-                                <h1 class=" mb-0"><i class="fas fa-leaf"></i> Flora</h1>
+                                <h1 class=" mb-0 "><i class="fas fa-leaf"></i> Flora</h1>
                                 <!-- <img src="img/logo.png" alt="Logo"> -->
                             </a>  
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -88,23 +88,27 @@
                                 <div class="navbar-nav mx-0 mx-lg-auto bg-white">
                                     <a href="index.html" class="nav-item nav-link active">Home</a>
                                     <a href="about.html" class="nav-item nav-link">About</a>
-                                    <a href="service.html" class="nav-item nav-link">Service</a>
-                                    <a href="blog.html" class="nav-item nav-link">Blog</a>
+                                    <a href="service.html" class="nav-item nav-link">Services</a>
                                     <div class="nav-item dropdown">
                                         <a href="#" class="nav-link" data-bs-toggle="dropdown">
-                                            <span class="dropdown-toggle">Pages</span>
+                                            <span class="dropdown-toggle">Products</span>
                                         </a>
                                         <div class="dropdown-menu">
-                                            <a href="project.html" class="dropdown-item">Our projects</a>
-                                            <a href="team.html" class="dropdown-item">Our team</a>
-                                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                            <a href="404.html" class="dropdown-item">404 Page</a>
+                                            <a href="project.html" class="dropdown-item">Bouquets </a>
+                                            <a href="team.html" class="dropdown-item">Indoor Plants</a>
+                                            
                                         </div>
                                     </div>
                                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                                     <div class="nav-btn ps-3">
-                                        <button class="btn-search btn  btn-md-square mt-2 mt-lg-0 mb-4 mb-lg-0 flex-shrink-0" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
-                                        <a href="#" class="btn  py-2 px-4 ms-0 ms-lg-3"> Get Solution</a>
+                                        <!-- Search Bar Start -->
+                                <form class="d-flex">
+                                    <input class="form-control me-2 search-bar" type="search" placeholder="Search for flowers or plants..." aria-label="Search">
+                                    <button class="btn " type="submit">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </form>
+                                    
                                     </div>
                                 </div>
                             </div>
@@ -116,24 +120,7 @@
         <!-- Navbar & Hero End -->
 
 
- <!-- Modal Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center bg-primary">
-                        <div class="input-group w-75 mx-auto d-flex">
-                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
-                            <span id="search-icon-1" class="btn bg-light border nput-group-text p-3"><i class="fa fa-search"></i></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal Search End -->
+ 
 
 
         <!-- Carousel Start -->
@@ -145,7 +132,7 @@
                         <div class="row g-4 align-items-center">
                             <div class="col-lg-7 animated fadeInLeft">
                                 <div class="text-sm-center text-md-start">
-                                    <h1 class="display-2  mb-4">Welcome To Flora</h1>
+                                    <h1 class="display-2  mb-4" id=welcome>Welcome To Flora</h1>
                                       <h4 class=" text-uppercase fw-bold mb-4">Where Nature's Beauty Meets Your Special Moments</h4>
                                     <div class="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4">
                                         <a class="btn  py-3 px-4 px-md-5 me-2 " href="#">Shop Now</a>
@@ -159,18 +146,15 @@
             </div>
             <div class="header-carousel-item hero-section">
                 <img src="..\assets\images\flat-lay-blooming-flowers-with-copy-space.jpg" alt="">
-                <div class="carousel-caption id="herocap2"">
+                <div class="carousel-caption">
                     <div class="container">
                         <div class="row g-4 align-items-center">
                             <div class="col-lg-7 animated fadeInLeft">
                                 <div class="text-sm-center text-md-start">
                                    
-                                    <h1 class="display-2  mb-4" >Fresh Flowers for Every Occasion</h1>
+                                    <h1 class="display-2  mb-4" style="margin-top: 150px;margin-left:150px" >Daily Fresh Flowers </h1>
                                     
-                                    <div class="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4">
-                                    <a class="btn btn-light py-3 px-4 px-md-5 me-2" href="#">Shop Now</a>
-                                    <a class="btn  py-3 px-4 px-md-5 ms-2" href="#">Contact Us </a>
-                                    </div>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -186,12 +170,9 @@
                             <div class="col-lg-7 animated fadeInLeft">
                                 <div class="text-sm-center text-md-start">
                                    
-                                    <h1 class="display-2  mb-4">Indoor Plants for your space</h1>
+                                    <h1 class="display-2  mb-4"style="margin-top: 150px">Indoor Plants</h1>
                                     
-                                    <div class="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4">
-                                    <a class="btn btn-light py-3 px-4 px-md-5 me-2" href="#">Shop Now</a>
-                                    <a class="btn  py-3 px-4 px-md-5 ms-2" href="#">Contact Us </a>
-                                    </div>
+                                   
                                 </div>
                             </div>
                         </div>

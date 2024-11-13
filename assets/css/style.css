@@ -1,6 +1,8 @@
 /* electrical template top nav hero section css */
 /*** Navbar Start ***/
 
+
+  
 .header-top .topbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
@@ -205,7 +207,7 @@
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
-    font-family: "Font Awesome 5 Free";
+ 
     font-weight: 600;
     vertical-align: middle;
     margin-left: 8px;
@@ -296,6 +298,18 @@
     }
 }
 
+@media (max-width: 991px) {
+    .navbar {
+        margin: 0;
+        padding: 0; /* Adjust if needed */
+    }
+
+    .hero-section {
+        margin-top: 0; /* Remove top margin */
+    }
+}
+
+
 /*** Navbar End ***/
 
 
@@ -362,24 +376,34 @@
     align-items: center;
     z-index: 9;
 }
+@media (max-width: 991px) {
+    .hero-section {
+        height: 70vh; /* Adjust height for smaller screens */
+        margin-top: 0; /* Remove any margin at the top */
+    }
+}
 
     @media (max-width: 991px) {
         .header-carousel .header-carousel-item .carousel-caption {
-            padding-top: 45px;
+            padding-top: 0px;
         }}
 
-
+        @media (max-width: 991px) {
+            .header-carousel .header-carousel-item .carousel-caption {
+                bottom: 5%; /* Adjust the bottom position */
+            }
+        }
+        
         .header-carousel .header-carousel-item .carousel-caption {
             position: absolute;
             bottom: 10%; /* Position slightly above the bottom for better visibility */
             left: 50%;
             transform: translateX(-50%);
             text-align: left;
-            color: #FDDBBB !important; /* Set text color to FDDBBB */
+            
             padding: 20px;
             border-radius: 10px;
             max-width: 90%; /* Constrain width for better appearance */
-            font-family: 'Jost', sans-serif; /* Matches your existing font family */
             font-size: 1.5rem;
             line-height: 1.6;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds depth */
@@ -397,7 +421,7 @@
         @media (max-width: 576px) {
             .header-carousel .header-carousel-item .carousel-caption {
                 background-color: rgba(0, 0, 0, 0.05); /* Semi-transparent background for readability */
-                color: #ffffff !important;                font-size: 0.5rem;
+                                font-size: 0.5rem;
                 padding-top: 100px;
                 max-width: 100%; /* Wider on smaller devices */
             }
@@ -439,3 +463,5 @@
     transform: scale(1.05); /* Slightly enlarge */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
 }
+
+
